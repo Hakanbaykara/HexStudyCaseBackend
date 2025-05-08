@@ -53,21 +53,6 @@ class Prompt {
       throw error;
     }
   }
-
-  static async sentStatusAsError(id) {
-    try {
-      const docRef = db.collection("prompts").doc(id);
-      const doc = await docRef.get();
-      if (!doc.exists) {
-        return null;
-      }
-      await docRef.update({ status: "error" });
-      return true;
-    } catch (error) {
-      console.error("Error updating message in Firestore:", error);
-      throw error;
-    }
-  }
 }
 
 module.exports = Prompt;
