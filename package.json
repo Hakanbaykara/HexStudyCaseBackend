@@ -1,0 +1,17 @@
+{
+  "name": "nodejsexample",
+  "version": "1.0.0",
+  "main": "server.js",
+  "start": "node server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^12.3.1"
+  }
+}
